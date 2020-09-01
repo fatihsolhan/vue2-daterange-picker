@@ -460,7 +460,7 @@ export default {
     }
     data.months = new Array(2)
       .fill(null)
-      .map((_, i) => util.getNthMonth(data.monthDate, i + 1));
+      .map((_, i) => util.getNthMonth(data.monthDate, i));
     return data;
   },
   methods: {
