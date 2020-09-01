@@ -68,80 +68,48 @@
           </slot>
 
           <div class="calendars-container" v-if="showCalendars">
-            <div
-              class="drp-calendar col left"
-              :class="{ single: singleDatePicker }"
-            >
-              <div class="daterangepicker_input d-none d-sm-block" v-if="false">
-                <input
-                  class="input-mini form-control"
-                  type="text"
-                  name="daterangepicker_start"
-                  :value="startText"
+            <template v-for="(month, index) in months">
+              <div
+                class="drp-calendar col"
+                v-if="!singleDatePicker"
+                :key="index"
+              >
+                <div class="daterangepicker_input" v-if="false">
+                  <input
+                    class="input-mini form-control"
+                    type="text"
+                    name="daterangepicker_end"
+                    :value="endText"
+                  />
+                  <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                </div>
+                <div class="calendar-table">
+                  <calendar
+                    :monthDate="month"
+                    :locale-data="locale"
+                    :start="start"
+                    :end="end"
+                    :minDate="min"
+                    :maxDate="max"
+                    :show-dropdowns="showDropdowns"
+                    @next-month-clicked="pushMonth"
+                    @prev-month-clicked="unShiftMonth"
+                    :date-format="dateFormatFn"
+                    @dateClick="dateClick"
+                    @hoverDate="hoverDate"
+                    :showWeekNumbers="showWeekNumbers"
+                  ></calendar>
+                </div>
+                <calendar-time
+                  v-if="timePicker && end"
+                  @update="onUpdateEndTime"
+                  :miniute-increment="timePickerIncrement"
+                  :hour24="timePicker24Hour"
+                  :second-picker="timePickerSeconds"
+                  :current-time="end"
                 />
-                <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
               </div>
-              <div class="calendar-table">
-                <calendar
-                  :monthDate="monthDate"
-                  :locale-data="locale"
-                  :start="start"
-                  :end="end"
-                  :minDate="min"
-                  :maxDate="max"
-                  :show-dropdowns="showDropdowns"
-                  @change-month="changeLeftMonth"
-                  :date-format="dateFormatFn"
-                  @dateClick="dateClick"
-                  @hoverDate="hoverDate"
-                  :showWeekNumbers="showWeekNumbers"
-                ></calendar>
-              </div>
-              <calendar-time
-                v-if="timePicker && start"
-                @update="onUpdateStartTime"
-                :miniute-increment="timePickerIncrement"
-                :hour24="timePicker24Hour"
-                :second-picker="timePickerSeconds"
-                :current-time="start"
-              />
-            </div>
-
-            <div class="drp-calendar col right" v-if="!singleDatePicker">
-              <div class="daterangepicker_input" v-if="false">
-                <input
-                  class="input-mini form-control"
-                  type="text"
-                  name="daterangepicker_end"
-                  :value="endText"
-                />
-                <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
-              </div>
-              <div class="calendar-table">
-                <calendar
-                  :monthDate="nextMonthDate"
-                  :locale-data="locale"
-                  :start="start"
-                  :end="end"
-                  :minDate="min"
-                  :maxDate="max"
-                  :show-dropdowns="showDropdowns"
-                  @change-month="changeRightMonth"
-                  :date-format="dateFormatFn"
-                  @dateClick="dateClick"
-                  @hoverDate="hoverDate"
-                  :showWeekNumbers="showWeekNumbers"
-                ></calendar>
-              </div>
-              <calendar-time
-                v-if="timePicker && end"
-                @update="onUpdateEndTime"
-                :miniute-increment="timePickerIncrement"
-                :hour24="timePicker24Hour"
-                :second-picker="timePickerSeconds"
-                :current-time="end"
-              />
-            </div>
+            </template>
           </div>
         </div>
         <!--
@@ -207,6 +175,10 @@ export default {
     event: "update",
   },
   props: {
+    maxMonthCount: {
+      type: Number,
+      default: 2,
+    },
     /**
      * minimum date allowed to be selected
      * @default null
@@ -454,7 +426,10 @@ export default {
   data() {
     //copy locale data object
     const util = getDateUtil(this.dateUtil);
-    let data = { locale: util.localeData({ ...this.localeData }) };
+    let data = {
+      locale: util.localeData({ ...this.localeData }),
+      util,
+    };
 
     let startDate = this.dateRange.startDate || null;
     let endDate = this.dateRange.endDate || null;
@@ -483,9 +458,25 @@ export default {
         iterator--;
       }
     }
+    data.months = new Array(2)
+      .fill(null)
+      .map((_, i) => util.getNthMonth(data.monthDate, i + 1));
     return data;
   },
   methods: {
+    pushMonth() {
+      this.months.push(
+        this.util.getNthMonth(this.months[this.months.length - 1], 1)
+      ) > this.maxMonthCount
+        ? this.months.shift()
+        : null;
+    },
+    unShiftMonth() {
+      this.months.unshift(this.util.getNthMonth(this.months[0], -1)) >
+      this.maxMonthCount
+        ? this.months.pop()
+        : null;
+    },
     dateFormatFn(classes, date) {
       let dt = new Date(date);
       dt.setHours(0, 0, 0, 0);

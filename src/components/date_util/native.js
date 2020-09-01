@@ -53,17 +53,28 @@ const DateUtil = {
   },
   localeData: options => {
     let default_locale = {
-      direction: "ltr",
-      format: "mm/dd/yyyy",
+      format: "DD/MM/YYYY",
       separator: " - ",
-      applyLabel: "Apply",
-      cancelLabel: "Cancel",
-      weekLabel: "W",
-      customRangeLabel: "Custom Range",
-      daysOfWeek: dateFormat.i18n.dayNames
-        .slice(0, 7)
-        .map(d => d.substring(0, 2)),
-      monthNames: dateFormat.i18n.monthNames.slice(0, 12),
+      applyLabel: "Uygula",
+      cancelLabel: "Vazgeç",
+      fromLabel: "Dan",
+      toLabel: "a",
+      customRangeLabel: "Seç",
+      daysOfWeek: ["Pzt", "Sal", "Çar", "Per", "Cum", "Cmt", "Paz"],
+      monthNames: [
+        "Ocak",
+        "Şubat",
+        "Mart",
+        "Nisan",
+        "Mayıs",
+        "Haziran",
+        "Temmuz",
+        "Ağustos",
+        "Eylül",
+        "Ekim",
+        "Kasım",
+        "Aralık"
+      ],
       firstDay: 0
     };
 
