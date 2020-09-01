@@ -31,6 +31,12 @@ const DateUtil = {
     prevMonthDate.setMonth(prevMonthDate.getMonth() - 1);
     return prevMonthDate;
   },
+  getNthMonth: (date, n) => {
+    let nthMonthDate = new Date(date.getTime());
+    nthMonthDate.setDate(1);
+    nthMonthDate.setMonth(nthMonthDate.getMonth() + n);
+    return nthMonthDate;
+  },
   validateDateRange: (newDate, min, max) => {
     let max_date = new Date(max);
     let min_date = new Date(min);
