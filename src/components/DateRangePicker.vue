@@ -69,11 +69,7 @@
 
           <div class="calendars-container" v-if="showCalendars">
             <template v-for="(month, index) in months">
-              <div
-                class="drp-calendar col"
-                v-if="!singleDatePicker"
-                :key="index"
-              >
+              <div class="drp-calendar col" :key="index">
                 <div class="daterangepicker_input" v-if="false">
                   <input
                     class="input-mini form-control"
