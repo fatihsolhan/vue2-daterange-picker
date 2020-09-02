@@ -636,6 +636,10 @@ export default {
       this.$emit("select", { startDate: this.start, endDate: this.end });
     },
     clickAway($event) {
+      // eslint-disable-next-line
+      console.log($event);
+      // eslint-disable-next-line
+      console.log($event.target);
       if (
         $event &&
         $event.target &&
