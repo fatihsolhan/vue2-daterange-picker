@@ -641,7 +641,8 @@ export default {
         $event.target &&
         !this.$el.contains($event.target) &&
         this.$refs.dropdown &&
-        !this.$refs.dropdown.contains($event.target)
+        !this.$refs.dropdown.contains($event.target) &&
+        !("datepicker-trigger" in $event.target.dataset)
       ) {
         this.clickCancel();
       }
