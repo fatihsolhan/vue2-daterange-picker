@@ -490,17 +490,6 @@ module.exports.f = function getOwnPropertyNames(it) {
 
 /***/ }),
 
-/***/ "05c2":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_id_6dd567fb_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("333a");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_id_6dd567fb_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_id_6dd567fb_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_id_6dd567fb_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
 /***/ "06cf":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3137,13 +3126,6 @@ if (NOT_GENERIC || INCORRECT_NAME) {
 
 })));
 
-
-/***/ }),
-
-/***/ "333a":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -13405,6 +13387,17 @@ module.exports = function (S, index, unicode) {
 
 /***/ }),
 
+/***/ "8f25":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_id_17518427_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("a1d3");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_id_17518427_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_id_17518427_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_id_17518427_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
 /***/ "9043":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14438,6 +14431,13 @@ module.exports = function (IteratorConstructor, NAME, next) {
 
 })));
 
+
+/***/ }),
+
+/***/ "a1d3":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -24033,17 +24033,21 @@ var getDateUtil = function getDateUtil() {
     this.$dateUtil = getDateUtil(this.dateUtil);
   }
 });
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"8848ca3a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Calendar.vue?vue&type=template&id=6dd567fb&scoped=true&
-var Calendarvue_type_template_id_6dd567fb_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('table',{staticClass:"table-condensed"},[_c('thead',[_c('tr',[_c('th',{staticClass:"prev available",attrs:{"tabindex":"0"},on:{"click":_vm.prevMonthClick}},[_c('span')]),(_vm.showDropdowns)?_c('th',{staticClass:"month",attrs:{"colspan":_vm.showWeekNumbers ? 6 : 5}},[_c('div',{staticClass:"row mx-1"},[_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.month),expression:"month"}],staticClass:"monthselect col",on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.month=$event.target.multiple ? $$selectedVal : $$selectedVal[0]}}},_vm._l((_vm.months),function(m){return _c('option',{key:m.value,domProps:{"value":m.value + 1}},[_vm._v(" "+_vm._s(m.label)+" ")])}),0),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.year),expression:"year"}],ref:"yearSelect",staticClass:"yearselect col",attrs:{"type":"number"},domProps:{"value":(_vm.year)},on:{"blur":_vm.checkYear,"input":function($event){if($event.target.composing){ return; }_vm.year=$event.target.value}}})])]):_c('th',{staticClass:"month",attrs:{"colspan":_vm.showWeekNumbers ? 6 : 5}},[_vm._v(" "+_vm._s(_vm.monthName)+" "+_vm._s(_vm.year)+" ")]),_c('th',{staticClass:"next available",attrs:{"tabindex":"0"},on:{"click":_vm.nextMonthClick}},[_c('span')])])]),_c('tbody',[_c('tr',[(_vm.showWeekNumbers)?_c('th',{staticClass:"week"},[_vm._v(_vm._s(_vm.locale.weekLabel))]):_vm._e(),_vm._l((_vm.locale.daysOfWeek),function(weekDay){return _c('th',{key:weekDay},[_vm._v(" "+_vm._s(weekDay)+" ")])})],2),_vm._l((_vm.calendar),function(dateRow,index){return _c('tr',{key:index},[(_vm.showWeekNumbers && (index % 7 || index === 0))?_c('td',{staticClass:"week"},[_vm._v(" "+_vm._s(_vm.$dateUtil.weekNumber(dateRow[0]))+" ")]):_vm._e(),_vm._l((dateRow),function(date,idx){return _vm._t("date-slot",[_c('td',{key:idx,class:_vm.dayClass(date),on:{"click":function($event){return _vm.$emit('dateClick', date)},"mouseover":function($event){return _vm.$emit('hoverDate', date)}}},[_vm._v(" "+_vm._s(date.getDate())+" ")])])})],2)})],2)])}
-var Calendarvue_type_template_id_6dd567fb_scoped_true_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"8848ca3a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Calendar.vue?vue&type=template&id=17518427&scoped=true&
+var Calendarvue_type_template_id_17518427_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('table',{staticClass:"table-condensed"},[_c('thead',[_c('tr',[_c('th',{staticClass:"prev available",attrs:{"tabindex":"0"},on:{"click":_vm.prevMonthClick}},[_c('span')]),(_vm.showDropdowns)?_c('th',{staticClass:"month",attrs:{"colspan":_vm.showWeekNumbers ? 6 : 5}},[_c('div',{staticClass:"row mx-1"},[_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.month),expression:"month"}],staticClass:"monthselect col",on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.month=$event.target.multiple ? $$selectedVal : $$selectedVal[0]}}},_vm._l((_vm.months),function(m){return _c('option',{key:m.value,domProps:{"value":m.value + 1}},[_vm._v(" "+_vm._s(m.label)+" ")])}),0),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.year),expression:"year"}],ref:"yearSelect",staticClass:"yearselect col",attrs:{"type":"number"},domProps:{"value":(_vm.year)},on:{"blur":_vm.checkYear,"input":function($event){if($event.target.composing){ return; }_vm.year=$event.target.value}}})])]):_c('th',{staticClass:"month",attrs:{"colspan":_vm.showWeekNumbers ? 6 : 5}},[_vm._v(" "+_vm._s(_vm.monthName)+" "+_vm._s(_vm.year)+" ")]),_c('th',{staticClass:"next available",attrs:{"tabindex":"0"},on:{"click":_vm.nextMonthClick}},[_c('span')])])]),_c('tbody',[_c('tr',[(_vm.showWeekNumbers)?_c('th',{staticClass:"week"},[_vm._v(_vm._s(_vm.locale.weekLabel))]):_vm._e(),_vm._l((_vm.locale.daysOfWeek),function(weekDay){return _c('th',{key:weekDay,staticClass:"weekdays-wrapper"},[_vm._v(" "+_vm._s(weekDay)+" ")])})],2),_vm._l((_vm.calendar),function(dateRow,index){return _c('tr',{key:index},[(_vm.showWeekNumbers && (index % 7 || index === 0))?_c('td',{staticClass:"week"},[_vm._v(" "+_vm._s(_vm.$dateUtil.weekNumber(dateRow[0]))+" ")]):_vm._e(),_vm._l((dateRow),function(date,idx){return _vm._t("date-slot",[_c('td',{key:idx,class:_vm.dayClass(date),on:{"click":function($event){return _vm.$emit('dateClick', date)},"mouseover":function($event){return _vm.$emit('hoverDate', date)}}},[_vm._v(" "+_vm._s(date.getDate())+" ")])])})],2)})],2)])}
+var Calendarvue_type_template_id_17518427_scoped_true_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Calendar.vue?vue&type=template&id=6dd567fb&scoped=true&
+// CONCATENATED MODULE: ./src/components/Calendar.vue?vue&type=template&id=17518427&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Calendar.vue?vue&type=script&lang=js&
 
 
 
+//
+//
+//
+//
 //
 //
 //
@@ -24305,8 +24309,8 @@ var Calendarvue_type_template_id_6dd567fb_scoped_true_staticRenderFns = []
 });
 // CONCATENATED MODULE: ./src/components/Calendar.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_Calendarvue_type_script_lang_js_ = (Calendarvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/Calendar.vue?vue&type=style&index=0&id=6dd567fb&scoped=true&lang=scss&
-var Calendarvue_type_style_index_0_id_6dd567fb_scoped_true_lang_scss_ = __webpack_require__("05c2");
+// EXTERNAL MODULE: ./src/components/Calendar.vue?vue&type=style&index=0&id=17518427&scoped=true&lang=scss&
+var Calendarvue_type_style_index_0_id_17518427_scoped_true_lang_scss_ = __webpack_require__("8f25");
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
@@ -24414,11 +24418,11 @@ function normalizeComponent (
 
 var component = normalizeComponent(
   components_Calendarvue_type_script_lang_js_,
-  Calendarvue_type_template_id_6dd567fb_scoped_true_render,
-  Calendarvue_type_template_id_6dd567fb_scoped_true_staticRenderFns,
+  Calendarvue_type_template_id_17518427_scoped_true_render,
+  Calendarvue_type_template_id_17518427_scoped_true_staticRenderFns,
   false,
   null,
-  "6dd567fb",
+  "17518427",
   null
   
 )
