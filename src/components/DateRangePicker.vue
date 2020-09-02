@@ -636,17 +636,13 @@ export default {
       this.$emit("select", { startDate: this.start, endDate: this.end });
     },
     clickAway($event) {
-      // eslint-disable-next-line
-      console.log($event);
-      // eslint-disable-next-line
-      console.log($event.target);
       if (
         $event &&
         $event.target &&
         !this.$el.contains($event.target) &&
         this.$refs.dropdown &&
         !this.$refs.dropdown.contains($event.target) &&
-        !("datepicker-trigger" in $event.target.dataset)
+        !("datepickerTrigger" in $event.target.dataset)
       ) {
         this.clickCancel();
       }
