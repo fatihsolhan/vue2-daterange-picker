@@ -42,7 +42,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr class="weekdays-wrapper">
         <th v-if="showWeekNumbers" class="week">{{ locale.weekLabel }}</th>
         <th
           class="weekdays-item"
