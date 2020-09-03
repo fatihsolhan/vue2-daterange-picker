@@ -2,7 +2,11 @@
   <table class="table-condensed">
     <thead>
       <tr>
-        <th class="prev available" @click="prevMonthClick" tabindex="0">
+        <th
+          class="prev available drp-navigation-btn"
+          @click="prevMonthClick"
+          tabindex="0"
+        >
           <span />
         </th>
         <th
@@ -28,7 +32,11 @@
         <th v-else :colspan="showWeekNumbers ? 6 : 5" class="month">
           {{ monthName }} {{ year }}
         </th>
-        <th class="next available" @click="nextMonthClick" tabindex="0">
+        <th
+          class="next available drp-navigation-btn"
+          @click="nextMonthClick"
+          tabindex="0"
+        >
           <span />
         </th>
       </tr>
@@ -37,7 +45,7 @@
       <tr>
         <th v-if="showWeekNumbers" class="week">{{ locale.weekLabel }}</th>
         <th
-          class="weekdays-wrapper"
+          class="weekdays-item"
           v-for="weekDay in locale.daysOfWeek"
           :key="weekDay"
         >
