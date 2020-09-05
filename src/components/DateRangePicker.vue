@@ -457,6 +457,8 @@ export default {
     data.months = new Array(2)
       .fill(null)
       .map((_, i) => util.getNthMonth(data.monthDate, i));
+    data.startDateClicked = false;
+    data.endDateClicked = false;
     return data;
   },
   methods: {
@@ -555,7 +557,35 @@ export default {
 
       return newDate;
     },
+    isSameDate(v, d) {
+      console.log({
+        n: this.normalizeDatetime(v, d).toString(),
+        d: d.toString(),
+      });
+      return this.normalizeDatetime(v, d).toString() === d.toString();
+    },
     dateClick(value) {
+      const isStartDate = this.isSameDate(value, this.start);
+      if (isStartDate && !this.startDateClicked) {
+        this.startDateClicked = true;
+        return;
+      }
+      if (this.startDateClicked) {
+        this.start = this.normalizeDatetime(value, this.start);
+        this.startDateClicked = false;
+        return;
+      }
+      const isEndDate =
+        this.isSameDate(value, this.end) && this.end === this.dateRange.endDate;
+      if (isEndDate && !this.endDateClicked && this.start !== this.end) {
+        this.endDateClicked = true;
+        return;
+      }
+      if (this.endDateClicked) {
+        this.end = this.normalizeDatetime(value, this.end);
+        this.endDateClicked = false;
+        return;
+      }
       if (this.in_selection) {
         this.in_selection = false;
         this.end = this.normalizeDatetime(value, this.end);
