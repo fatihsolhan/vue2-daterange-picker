@@ -1,6 +1,6 @@
 <template>
   <div
-    class="vue-daterange-picker testing-fork"
+    class="vue-daterange-picker"
     :class="{ inline: opens === 'inline' }"
   >
     <div :class="controlContainerClass" @click="onClickPicker" ref="toggle">
@@ -454,9 +454,11 @@ export default {
         iterator--;
       }
     }
-    data.months = new Array(2)
+    const diff_startDate_today = Math.abs(new Date(data.monthDate).getTime() - Date.now())
+    const monthCountUntilSelectedDate = new Date(diff_startDate_today).getMonth() || 2
+    data.months = new Array(monthCountUntilSelectedDate)
       .fill(null)
-      .map((_, i) => util.getNthMonth(data.monthDate, i));
+      .map((_, i) => util.getNthMonth(new Date(), i));
     return data;
   },
   methods: {
