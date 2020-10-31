@@ -454,8 +454,9 @@ export default {
         iterator--;
       }
     }
-    const monthCount = util.monthDiff(new Date(), new Date(data.monthDate)) || 2
-    data.months = new Array(monthCount)
+    const diff_startDate_today = Math.abs(new Date(data.monthDate).getTime() - Date.now())
+    const monthCountUntilSelectedDate = new Date(diff_startDate_today).getMonth() || 2
+    data.months = new Array(monthCountUntilSelectedDate)
       .fill(null)
       .map((_, i) => util.getNthMonth(new Date(), i));
     return data;
